@@ -46,5 +46,3 @@ COPY ../. /phonemizer
 RUN cd /phonemizer && \
     chmod +x fuzz/fuzz.py && \
     python3 setup.py install && \
-    phonemize --version && \
-    python3 -m pytest -v test 
