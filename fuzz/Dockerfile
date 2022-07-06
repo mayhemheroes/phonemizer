@@ -34,7 +34,7 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y \
     apt-get clean
 
 # pytest needs to be installed through pip to make sure we have a recent version
-RUN pip3 install pytest atheris
+RUN pip3 install pytest atheris segments dlinfo
 
 # tests expect python to be available as executable 'python' not 'python3'
 RUN ln -s /usr/bin/python3 /usr/bin/python
