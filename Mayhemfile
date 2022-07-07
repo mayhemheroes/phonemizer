@@ -1,6 +1,6 @@
 project: phonemizer
-target: phonemizer_fuzz
+target: phonemizer-fuzz
 
 cmds:
-    - cmd: /phonemizer/fuzz/phonemizer_fuzz.py
+    - cmd: /phonemizer/fuzz/phonemizer-fuzz.py
       libfuzzer: true
